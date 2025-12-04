@@ -23,7 +23,7 @@ def main():
 
                 for j in range(12):
                     candidate_digits = digits.copy()
-                    hi = candidate_digits.pop(j)
+                    candidate_digits.pop(j)
                     candidate_digits.append(cur)
                     candidiate_number = list_into_integer(candidate_digits)
                     if max_int < candidiate_number:
@@ -35,4 +35,5 @@ def main():
         print("The answer to part 2 for the given input is: ", sum)
 
 if __name__ == "__main__":
+
     main()
