@@ -37,9 +37,7 @@ def main():
         else:
             temp = merged_ranges.pop()
             merged_ranges.append( (min(temp[0], id_range[0]), max(temp[1], id_range[1]) ) )
-
-    print(merged_ranges)
-
+            
     for id_range in merged_ranges:
         lower_limit = id_range[0]
         upper_limit = id_range[1]
