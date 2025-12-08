@@ -14,9 +14,6 @@ def solve_part_1(all_operands: list, operators: list, num_operands_per_line: int
         total += res
     return total
 
-def solve_part_2(all_operands: list, operators: list, num_operands_per_line: int) -> int:
-    pass
-
 def main():
     all_operands = list()
     operators = list()
@@ -35,7 +32,6 @@ def main():
         operators = lines_list[-1].split()
 
     answer1 = solve_part_1(all_operands, operators, num_operands_per_line)
-    solve_part_2(all_operands, operators, num_operands_per_line)
 
     print(answer1)
 
